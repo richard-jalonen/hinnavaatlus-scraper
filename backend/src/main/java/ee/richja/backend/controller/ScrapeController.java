@@ -20,7 +20,6 @@ public class ScrapeController {
 
     @GetMapping("/scrape")
     public List<ScrapeResult> getScrapeResults(@RequestParam String scrapeQuery) {
-        log.info("called");
         return scrapeService.scrape(scrapeQuery);
     }
 }

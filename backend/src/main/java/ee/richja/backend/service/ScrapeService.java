@@ -24,7 +24,6 @@ public class ScrapeService {
         Document secondPagePCParts = null;
 
         Document firstPageConsoles = null;
-        //Document secondPageConsoles = null;
 
         Document firstPageVarious = null;
         Document secondPageVarious = null;
@@ -73,8 +72,6 @@ public class ScrapeService {
                 scrapeResult.setTopic(topic.text());
                 scrapeResult.setTopicUrl(URL_PREFIX + topic.attr("href"));
                 results.add(scrapeResult);
-                //log.info(topic.text());
-                //log.info(URL_PREFIX + topic.attr("href"));
             }
         }
 
